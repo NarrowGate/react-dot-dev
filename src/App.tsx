@@ -1,13 +1,9 @@
-import React from 'react';
-import ExampleComponent from './components/ExampleComponent';
+import { useState } from 'react'
 
-const App: React.FC = () => {
-  return (
-    <div>
-      <h1>Welcome to My React TypeScript App</h1>
-      <ExampleComponent />
-    </div>
-  );
-};
+function App() {
+    const [user, setUser] = useState(null)
 
-export default App;
+    return <>{user === null ? 'ksks' : 'kkskskskskskskk'}</>
+}
+
+export default App

@@ -3,7 +3,7 @@
     "dockerFile": "../Dockerfile",
 
     // Uncomment the next line if you want to publish any ports.
-    "appPort": ["4030:5173"],
+    "appPort": ["5030:5173"],
 
     "customizations": {
         "vscode": {
@@ -24,7 +24,8 @@
                 "formulahendry.auto-rename-tag",
                 "dsznajder.es7-react-js-snippets",
                 "wix.glean",
-                "eamodio.gitlens"
+                "eamodio.gitlens",
+                "mhutchie.git-graph"
             ]
         }
     },
@@ -36,6 +37,6 @@
         // "source=${localEnv:HOME}/Documents/repos/mrpo/.prettierrc,target=/home/node/mw/react/.prettierrc,type=bind"
     ],
     // "source=${locaEnv:HOME}/Documents/repos/mrpo/packages,target=/home/node/mw,type=bind"
-    "workspaceFolder": "/home/node/mw/react"
-    // "postCreateCommand": "npm install"
+    "workspaceFolder": "/home/node/mw/react",
+    "postCreateCommand": "npm install"
 }
