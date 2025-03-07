@@ -1,9 +1,8 @@
 import { useState } from 'react'
+import BadgeVariables from './components/BadgeVariables/BadgeVariables'
 
 function App() {
-    const [user, setUser] = useState(null)
-
-    return <>{user === null ? 'ksks' : 'kkskskskskskskk'}</>
+    return <BadgeVariables />
 }
 
 export default App
